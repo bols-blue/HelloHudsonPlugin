@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <builtOn></builtOn>
+  <hudsonVersion>1.153</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits/>
+  <number>1</number>
+  <result>FAILURE</result>
+  <duration>140</duration>
+  <keepLog>false</keepLog>
+</build>

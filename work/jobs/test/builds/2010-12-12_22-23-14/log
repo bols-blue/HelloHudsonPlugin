@@ -1,0 +1,13 @@
+started
+Hello, bols!
+FATAL: hudson.model.StreamBuildListener cannot be cast to org.apache.tools.ant.BuildListener
+java.lang.ClassCastException: hudson.model.StreamBuildListener cannot be cast to org.apache.tools.ant.BuildListener
+	at hello_hudson.HelloWorldBuilder.perform(HelloWorldBuilder.java:61)
+	at hudson.tasks.BuildStepCompatibilityLayer.perform(BuildStepCompatibilityLayer.java:33)
+	at hudson.model.Build$RunnerImpl.build(Build.java:156)
+	at hudson.model.Build$RunnerImpl.doRun(Build.java:124)
+	at hudson.model.AbstractBuild$AbstractRunner.run(AbstractBuild.java:192)
+	at hudson.model.Run.run(Run.java:646)
+	at hudson.model.Build.run(Build.java:102)
+	at hudson.model.ResourceController.execute(ResourceController.java:70)
+	at hudson.model.Executor.run(Executor.java:62)
