@@ -1,0 +1,8 @@
+
+参考URL
+http://d.hatena.ne.jp/fits/20080502/1209726765
+http://d.hatena.ne.jp/wyukawa/20090605/1244210141
+
+hudsonの実行
+set MAVEN_OPTS=-Xdebug -Xrunjdwp:transport=dt_socket,server=y,address=8000,suspend=n
+mvn hpi:run
