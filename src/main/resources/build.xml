@@ -1,0 +1,35 @@
+<project name="sample_project" default="dummydata" basedir=".">
+	<taskdef name="original"
+		classname="hello_hudson.ant.SampleAntTask"
+		classpath="../../../target/classes/"
+	/>
+
+	<property name="srcdir" value="./src"/>
+
+	<target name="compile">
+		<exec executable="adb">
+			<arg value="devices" />
+			<redirector outputproperty="redirector.out"
+                		>
+				<outputmapper type="merge" to="redirector.txt"/> 
+        			<!--
+        			<errormapper type="merge" to="redirector.err"/>
+				-->
+    			</redirector>
+		</exec>
+		<echo>${redirector.out}</echo>
+		<original select="bar" />
+		<!--
+		<original select="baraa" />
+		-->
+		<original select="bar" devicesString="${redirector.out}" />
+	</target>
+	<target name="dummydata">
+		<loadfile property="redirector.out" srcfile="redirector.txt" />
+		<original select="bar" devicesString="${redirector.out}" />
+	</target>
+	<target name="install" depends="compile">
+	<!-- ここにインストールを実行するタスクを記述-->
+	</target>
+
+</project>

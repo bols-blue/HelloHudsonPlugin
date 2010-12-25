@@ -1,7 +1,12 @@
 
 参考URL
+Hudson Plugin
 http://d.hatena.ne.jp/fits/20080502/1209726765
 http://d.hatena.ne.jp/wyukawa/20090605/1244210141
+
+Javaからantを呼び出す
+http://www.atmarkit.co.jp/bbs/phpBB/viewtopic.php?topic=16992&forum=12&6
+
 
 hudsonの実行
 set MAVEN_OPTS=-Xdebug -Xrunjdwp:transport=dt_socket,server=y,address=8000,suspend=n
